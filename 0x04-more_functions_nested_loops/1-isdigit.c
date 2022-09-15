@@ -10,9 +10,9 @@
 int _isdigit(int c)
 {
 char item;
-for (item = 0; item <= 9; item++)
+for (item = '0'; item <= '9'; item++)
 {
-if (item == 0)
+if (item == c)
 {
 return (1);
 }
