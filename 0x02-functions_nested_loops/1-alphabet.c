@@ -1,26 +1,27 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
 
- *print_alphabet -  entry point.
+ * print_alphabet -  prints the lowercase alphabet
 
- *Return : 0 (if successful)
+ *
+
+ *
+
+ * Return: void
 
  */
 
 
 
-
-
-
-
 void print_alphabet(void)
 {
-char ch;
-for (ch = 'a'; ch <= 'z'; ch++)
+char c = 'a';
+int i;
+
+for (i = 0; i < 26; i++)
 {
-_putchar(ch);
+_putchar(c + i);
 }
-_putchar('\n');
+_putchar(10);
 }
