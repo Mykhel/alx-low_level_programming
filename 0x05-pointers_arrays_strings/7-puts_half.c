@@ -1,23 +1,27 @@
 #include "main.h"
-#include <stdio.h>
 #include <string.h>
 /**
-*puts2 - function
-*@str: char parameter
+*puts_half -function
+*@str: parameter
 */
 
-void puts2(char *str)
+void puts_half(char *str)
 {
-int i, n = strlen(str);
-for (i = 0; i < n; i++)
+int q, n = strlen(str);
+if (n % 2 == 0)
 {
-if (i % 2 == 0)
+q = n / 2;
+}
+else
 {
-putchar(str[i]);
+q = (n + 1) / 2;
 }
 
+while (q < n)
+{
+putchar(str[q]);
+q++;
 }
 putchar('\n');
-
 
 }
