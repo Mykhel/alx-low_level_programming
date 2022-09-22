@@ -1,10 +1,11 @@
 #include "main.h"
 
 /**
- * main - check the code
- * 
- * Return: Always 0
- */
+**_strcat - function
+*@dest:char parameter
+*@src: char parameter
+*Return: char value des
+*/
 
 
 char *_strcat(char *dest, char *src)
@@ -21,15 +22,15 @@ char *_strcat(char *dest, char *src)
     return (dest);
 }
 
-int main()
-{
-    char s1[] = "Hello ";
-    char s2[] = "Adriel";
-    char *ptr;
+// int main()
+// {
+//     char s1[] = "Hello ";
+//     char s2[] = "Adriel\n";
+//     char *ptr;
 
-    ptr = _strcat(s1, s2);
+//     ptr = _strcat(s1, s2);
 
-    printf("%s", ptr);
+//     printf("%s", ptr);
 
-    return (0);
-}
+//     return (0);
+// }

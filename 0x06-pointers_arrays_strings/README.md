@@ -1,0 +1,1 @@
+This directory is for C programmes on string arrays, string concatenation and further on some string functions.
