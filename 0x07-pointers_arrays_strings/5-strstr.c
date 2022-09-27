@@ -1,6 +1,7 @@
 /**
  * _strstr - function locates substring
- * 
+ * @haystack: main string
+ * @needle: substring
  * Return: 0 Always
  */
 
