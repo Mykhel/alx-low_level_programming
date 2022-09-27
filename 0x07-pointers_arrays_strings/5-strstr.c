@@ -1,7 +1,7 @@
 /**
- * _strstr - main entry point
+ * _strstr - function locates substring
  * 
- * Return: 0
+ * Return: 0 Always
  */
 
 char *_strstr(char *haystack, char *needle)
