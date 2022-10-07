@@ -2,20 +2,18 @@
 #include <stdlib.h>
 
 /**
- * free_grid - This frees a DAM space
- * @grid: This is the space to be freed
- * @height: This is the size of the pointer space
+ * free_grid - frees a 2 dimensional grid previously created
+ * by alloc_grid function
  *
- * Return: Null void
+ * @grid: double pointer to 2D array
+ * @height: array height
+ * Return: nothing
  */
 void free_grid(int **grid, int height)
 {
 	int i;
 
 	for (i = 0; i < height; i++)
-	{
 		free(grid[i]);
-	}
-
-
+	free(grid);
 }
