@@ -2,20 +2,26 @@
 #include <stddef.h>
 
 /**
- * array_iterator - Applies function to an array of items
- * @array: This is the array of ints
- * @size: This is the size of the array
- * @action: This is the pointer to the function to be applied
+ * int_index - a function that searches for an integer.
+ * @array: An integer array of size size.
+ * @size: The size of the array.
+ * @cmp: This is the compare function to be used.
  *
- * Return: Null Void
+ * Return: the index of the first element for which the cmp
+ * function does not return 0
  */
-void array_iterator(int *array, size_t size, void (*action)(int))
+int int_index(int *array, int size, int (*cmp)(int))
 {
-	size_t i;
+	int i;
 
-	if (array == NULL || size <= 0 || action == NULL)
-		return;
+	if (array == NULL || size <= 0 || cmp == NULL)
+		return (-1);
 
 	for (i = 0; i < size; i++)
-		action(array[i]);
+	{
+		if (cmp(array[i]) != 0)
+			return (i);
+	}
+
+	return (-1);
 }
