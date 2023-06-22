@@ -1,13 +1,15 @@
-#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include<stdio.h>
 /**
- *main - entry point
- *
- *Return: 0 (if successful)
+ * main - main block.
+ * Return: 0
  */
+
 int main(void)
 {
 int n;
-rand(time(0));
+srand(time(0));
 n = rand() - RAND_MAX / 2;
 if (n > 0)
 {

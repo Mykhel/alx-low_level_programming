@@ -1,26 +1,37 @@
 #include <stdio.h>
-
 /**
- *main - entry point
+ * main - main block.
  *
- *Return: 0 (successfull)
+ * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-int d1, d2, n = 0;
-for (d1 = '0'; d1 <= '9'; d1++)
-{
-for (d2 = d1 + 1; d2 <= '9'; d2++, n++)
-{
-if (n > 0)
-{
-putchar(',');
-putchar(' ');
-}
-putchar(d1);
-putchar(d2);
-}
-}
-putchar('\n');
-return (0);
+	int i, e;
+
+	i = 48;
+	e = 48;
+
+	while (e < 58)
+	{
+		i = 48;
+		while (i < 58)
+		{
+			if (e != i && e < i)
+			{
+				putchar(e);
+				putchar(i);
+				if (i == 57 && e == 56)
+				{
+					break;
+				}
+				putchar(',');
+				putchar(' ');
+			}
+			i++;
+		}
+		e++;
+	}
+	putchar('\n');
+	return (0);
 }

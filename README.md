@@ -1,1 +1,2 @@
-C programming directory
+### C Programming
+Readme file for alx-low_level_programming repository

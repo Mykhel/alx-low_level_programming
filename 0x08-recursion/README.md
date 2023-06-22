@@ -1,1 +1,3 @@
-This directory contains recursive C program scripts
+### C Programming
+Readme file for *0x08-recursion* directory.  
+Highlight: Recursion

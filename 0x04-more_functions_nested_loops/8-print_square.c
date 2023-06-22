@@ -1,34 +1,28 @@
-#include"main.h"
-
+#include "main.h"
 /**
- * print_square - print a square using the character #
- *
- * @size: is the size of the square
- *
- * Return: Always 0 (Success)
-*/
+ * print_square - function taht prints a square.
+ * @size: size of the square
+ * Return: Always 0
+ */
 
 void print_square(int size)
 {
-int length = size;
-
-int width = size;
+int x, y;
 
 if (size <= 0)
-	_putchar('\n');
+{
+_putchar('\n');
+}
 else
-	{
-	while (length > 0)
-		{
-		width = size;
+{
+for (x = 0; x < size; x++)
+{
+for (y = 0; y < size; y++)
+{
+_putchar(35);
+}
 
-		while (width > 0)
-			{
-			_putchar('#');
-			width--;
-			}
-		length--;
-		_putchar('\n');
-		}
-	}
+_putchar('\n');
+}
+}
 }

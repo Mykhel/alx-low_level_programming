@@ -1,34 +1,26 @@
-#include"main.h"
-
+#include "main.h"
 /**
- * print_sign - print + if n is greater than zero,
- *             0 if n is zero and - if n is less
- *             than zero.
- *
- * @n: takes integer type input for function.
- *
- * Return: 1 if +, 0 if 0 and -1 if -
-*/
+ * print_sign - function to print the sign of a number.
+ * @n: value being tested.
+ * Return: Always 0.
+ */
 
 int print_sign(int n)
 {
 if (n > 0)
-
 {
-
-_putchar(43 + 0);
-
+_putchar('+');
 return (1);
 }
-
 else if (n == 0)
 {
-_putchar(0 + 48);
+_putchar('0');
 return (0);
 }
-else
+else if (n < 0)
 {
-_putchar(45 + 0);
+_putchar('-');
 return (-1);
 }
+return (0);
 }

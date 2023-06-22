@@ -1,32 +1,38 @@
 #include "main.h"
-
 /**
- * _sqrt - Returns the square root of a number
- * @n: this is an int which is the num
- * @y: This is a buffer we will use
- * Return: n's square root
+ * power_operation - function that returns the,
+ * natural square root of a number.
+ * @n: number.
+ * @c: iterator.
+ * Return: square root or -1.
  */
-int _sqrt(int n, int y)
+
+int power_operation(int n, int c)
 {
-	if (n == 1)
-		return (1);
-	else if (y == n || n < 0)
-		return (-1);
-	else if (y * y == n)
-		return (y);
-	else
-		return (_sqrt(n, y + 1));
+if (c % (n / c) == 0)
+{
+if (c * (n / c) == n)
+return (c);
+else
+return (-1);
+}
+return (0 + power_operation(n, c + 1));
 }
 
-
 /**
- * _sqrt_recursion - Returns to the main program
- * the number from _sqrt
- * @n: this is the number
- *
- * Return: An int
+ * _sqrt_recursion - function that returns the,
+ * natural square root of a number.
+ * @n: number.
+ * Return: natural square root.
  */
+
 int _sqrt_recursion(int n)
 {
-	return (_sqrt(n, 1));
+if (n < 0)
+return (-1);
+if (n == 0)
+return (0);
+if (n == 1)
+return (1);
+return (power_operation(n, 2));
 }

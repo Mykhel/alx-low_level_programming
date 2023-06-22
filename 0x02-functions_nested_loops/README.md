@@ -1,1 +1,3 @@
-This is a project directory for C programming functions and loops
+### C Programming
+Readme file for  0x02-functions_nested_loops directory.  
+Highlight : Functions & Nested Loops

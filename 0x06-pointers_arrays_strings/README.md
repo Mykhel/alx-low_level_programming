@@ -1,1 +1,3 @@
-This directory is for C programmes on string arrays, string concatenation and further on some string functions.
+### C Programming
+Readme file for *0x06-pointers_arrays_strings* directory.  
+Highlights:  Arrays &  Strings

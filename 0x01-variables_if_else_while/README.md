@@ -1,1 +1,2 @@
-Directory for if else C programming scripts
+### C Programming
+Readme file for 0x01-variables_if_else_while directory

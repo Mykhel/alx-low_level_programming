@@ -1,18 +1,19 @@
 #include "main.h"
-
-
 /**
- *main-entry point
- *
- *Return:0 (successful)
+ * main - main block
+ * Return: 0
  */
 
 int main(void)
 {
-char str[] = "_putchar";
-int ch;
-for (ch = 0; ch < 8; ++ch)
-_putchar(str[ch]);
+_putchar('_');
+_putchar('p');
+_putchar('u');
+_putchar('t');
+_putchar('c');
+_putchar('h');
+_putchar('a');
+_putchar('r');
 _putchar('\n');
 return (0);
 }

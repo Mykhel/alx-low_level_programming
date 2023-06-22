@@ -1,16 +1,16 @@
-#include <stdio.h>
+#include<stdio.h>
 /**
- *main - entry point
- *
- *Return: 0 (successful)
+ * main - main block.
+ * Return: 0
  */
 
 int main(void)
 {
-char ch = 'a';
-
+int ch;
 for (ch = 'a'; ch <= 'z'; ch++)
+{
 putchar(ch);
+}
 putchar('\n');
 return (0);
 }

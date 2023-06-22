@@ -1,3 +1,3 @@
 ### C Programming
-Readme file for *0x1C-makefiles* directory.
+Readme file for *0x1C-makefiles* directory.  
 Highlight: Makefiles

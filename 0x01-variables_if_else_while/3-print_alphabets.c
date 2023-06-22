@@ -1,17 +1,25 @@
-#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include<stdio.h>
 /**
- *main - entry point
- *
- *Return: 0 (Successful)
+ * main - main block.
+ * Return: 0
  */
+
 int main(void)
 {
-char ch = 'a';
-char cb = 'A';
-for (ch = 'a'; ch <= 'z'; ch++)
+int ch;
+
+for (ch = 'a' ; ch <= 'z' ; ch++)
+{
 putchar(ch);
-for (cb = 'A'; cb <= 'Z'; cb++)
-putchar(cb);
+
+}
+
+for (ch = 'A' ; ch <= 'Z' ; ch++)
+{
+putchar(ch);
+}
 putchar('\n');
 return (0);
 }

@@ -1,34 +1,23 @@
 #include "main.h"
-
 /**
-*_strcmp - function
-*@s1 : char parameter
-*@s2 : char parameter
-*Return:int value
-*/
+ * _strcmp - function that compares two strings.
+ * @s1: first string.
+ * @s2: second string.
+ * Return: 0 if s1 and s2 are equals,
+ * another number if not.
+ */
+
 int _strcmp(char *s1, char *s2)
 {
-    int n, i, num;
-    int* value;
-    value = malloc(sizeof(int));
-    
-    if (strlen(s1) < strlen(s2))
-    {
-        n =  strlen(s2);
-    }
-    else
-    {
-        n = strlen(s1);
-    }
-    
-    for (i = 0; i < n; i++)
-    {
-        if (s1[i] != s2[i])
-        {
-            *value = (s1[i] - 48) - (s2[i] - 48);
-            break;
-        }
-    }
-    
-    return (*value);
+int i = 0, op = 0;
+
+while (op == 0)
+{
+if ((*(s1 + i) == '\0') && (*(s2 + i) == '\0'))
+break;
+op = *(s1 + i) - *(s2 + i);
+i++;
+}
+
+return (op);
 }

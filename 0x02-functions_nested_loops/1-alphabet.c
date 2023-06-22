@@ -1,21 +1,16 @@
 #include "main.h"
-
 /**
- * print_alphabet -  entry point
+ * print_alphabet - function to print letters of the alphabet.
  *
- * Return: 0 Always
+ * Return: Always 0.
  */
-
-
 
 void print_alphabet(void)
 {
-char c = 'a';
-int i;
-
-for (i = 0; i < 26; i++)
+char alphabet;
+for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
 {
-putchar(c + i);
+_putchar(alphabet);
 }
-putchar(10);
+_putchar('\n');
 }
